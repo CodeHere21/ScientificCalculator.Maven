@@ -180,11 +180,15 @@ public class TestMainApplication {
     public void cosTest() {
         MainApplication cosTest1 = new MainApplication();
         assertEquals(0.866025,cosTest1.getCos(30.0),0.000001);
+        assertEquals(0.5,cosTest1.getCos(60.0),0.1);
+        assertEquals(0.0,cosTest1.getCos(90.0),0.000001);
     }
     @Test
     public void tanTest() {
         MainApplication tanTest1 = new MainApplication();
         assertEquals(0,tanTest1.getTan(0.0),0.001);
+        assertEquals(0,tanTest1.getTan(45.0),0.001);
+
     }
     @Test
     public void asinpiTest(){
