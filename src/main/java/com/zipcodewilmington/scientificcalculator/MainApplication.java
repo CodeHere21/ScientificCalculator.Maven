@@ -1,15 +1,14 @@
 package com.zipcodewilmington.scientificcalculator;
-
 /**
  * Created by leon on 2/9/18.
  */
 public class MainApplication {
-
     private static double currentValue = 0.0; // Current Value
     private static double memoryValue = 0.0;  // Value Stored in Memory
-
     private static String currentMode = "binary";
     private static String currentUnit = "degrees";
+    //private String currentMode = "binary";
+    //private String currentUnit = "degrees";
 
     public static void main(String[] args) {
         Console.println("Welcome to my calculator!");
@@ -106,6 +105,7 @@ public class MainApplication {
         return memoryValue;
     }
 
+
     // MC+ KEY: Add currently displayed value to the value in memory & clear display
     public static double addCurrentValueToMemory() {
         memoryValue = currentValue;
@@ -131,6 +131,50 @@ public class MainApplication {
         return currentValue;
     }
 
+
+    //Following methods take a value (num1) for the log equations.
+    //Logarithms
+
+    //Takes a value for num2 for the log equation. num1 is not used in this case
+
+    public static double logarithm(double num1) {
+        double newNum = Math.log10(num1);
+        System.out.println(newNum);
+        return newNum;
+    }
+
+    //Inverted Logs
+
+
+    public double invLog(double num1) {
+        double newNum = Math.pow(10,num1);
+        System.out.println(newNum);
+        return newNum;
+
+    }
+    //Natural Logs
+    public double natLog(double num1) {
+        double newNum = Math.log(num1);
+        System.out.println(newNum);
+        return newNum;
+    }
+    //Inverted Natural Logs
+
+    }
+    public double natLog(double num1) {
+        double newNum = Math.log(num1);
+        System.out.println(newNum);
+        return newNum;
+    }
+
+    public double invNatLog(double num1) {
+        double newNum = Math.pow(Math.E,num1);
+        System.out.println(newNum);
+        return newNum;
+    }
+
+
+
     //DISPLAY CHANGES
 
     public void getMode() {
@@ -138,7 +182,11 @@ public class MainApplication {
     }
     //public void setMode(String newMode){currentMode = newMode;}
 
+
     public static String switchDisplayMode(){
+
+    public String switchDisplayMode(){
+
         if (currentMode.equals("binary")) {
             currentMode = "octal";
             System.out.println("octal");
@@ -152,11 +200,16 @@ public class MainApplication {
             currentMode = "binary";
             System.out.println("binary");
         } else System.out.println("Err");
-
         return currentMode;
     }
 
     public static String switchDisplayMode(String mode) {
+
+      return currentMode;
+    }
+
+    public String switchDisplayMode(String mode) {
+
         if (mode.equals("binary")) {
             currentMode = "binary";
         } else if (mode.equals("octal")) {
@@ -172,11 +225,19 @@ public class MainApplication {
 
     //UNIT CHANGES
 
+
     public static void getUnit() {
         System.out.println(currentUnit);
     }
 
     public static String switchUnitsMode(){
+
+    public void getUnit() {
+        System.out.println(currentUnit);
+    }
+
+    public String switchUnitsMode(){
+
         if (currentUnit.equals("degrees")) {
             currentUnit = "radians";
             System.out.println("radians");
@@ -188,15 +249,25 @@ public class MainApplication {
         return currentUnit;
     }
 
+
     public static String switchUnitsMode(String mode) {
+
+    public String switchUnitsMode(String mode) {
+
         if (mode.equals("degrees")) {
             currentUnit = "degrees";
         } else if (mode.equals("radians")) {
             currentUnit = "radians";
         } else mode = "Err";
+
         System.out.println(mode);
+
+            System.out.println(mode);
+
         return mode;
     }
 
 
+
 }
+
