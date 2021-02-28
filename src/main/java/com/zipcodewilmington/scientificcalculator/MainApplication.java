@@ -272,9 +272,14 @@ public class MainApplication {
 
     public static double getSin (double a) {
         double b=Math.toRadians(a);
+        System.out.println(Math.sin(b));
         return (Math.sin(b));
     }
-
+    public static double getSinPi (double a) {
+        //double b=Math.toRadians(a);
+        System.out.println(Math.sin(a));
+        return (Math.sin(a));
+    }
 
     public static double getCos(double a) {
         double b=Math.toRadians(a);
@@ -282,8 +287,15 @@ public class MainApplication {
         return (Math.cos(b));
     }
 
+    public static double getCosPi (double a) {
+        //double b=Math.toRadians(a);
+        System.out.println(Math.cos(a));
+        return (Math.cos(a));
+    }
+
     public static double getTan(double a) {
         double b=Math.toRadians(a);
+        System.out.println(Math.tan(b));
         return (Math.tan(b));
     }
 
@@ -293,15 +305,22 @@ public class MainApplication {
 
     public double getAsin(double a) {
         double b=Math.toRadians(a);
+        System.out.println(Math.asin(b));
         return (Math.asin(b));
+    }
+
+    public static double getAcosPi(double a) {
+        return (Math.acos(a));
     }
 
     public double getAcos (double a){
         double b=Math.toRadians(a);
+        System.out.println(Math.acos(b));
         return (Math.acos(b));
     }
 
     public double getAtan (double a){
+        System.out.println(Math.atan(a));
         return (Math.atan(a));
     }
 
