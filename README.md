@@ -1,3 +1,7 @@
+
+Contributors: Xiong Yuan (@xyuan04), Alena Litouka (@CodeHere21), Kelly Porter (@KellyPorter02),  Theresa Mashura (@theresa-mashura), Jorge Tapia (@jorget93)
+
+
 # ScientificCalculator (maven) ZCW
 
 
